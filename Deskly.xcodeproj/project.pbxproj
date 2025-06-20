@@ -29,20 +29,42 @@
 		29F00A0B2E0583CA00399B2A /* DesklyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesklyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		29F00A262E05C92300399B2A /* Exceptions for "Deskly" folder in "Deskly" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/DesklyTests/DesklyTests.swift,
+				Tests/DesklyUITests/DesklyUITests.swift,
+				Tests/DesklyUITests/DesklyUITestsLaunchTests.swift,
+			);
+			target = 29F009F32E0583C900399B2A /* Deskly */;
+		};
+		29F00A272E05C92300399B2A /* Exceptions for "Deskly" folder in "DesklyTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/DesklyTests/DesklyTests.swift,
+			);
+			target = 29F00A002E0583CA00399B2A /* DesklyTests */;
+		};
+		29F00A2D2E05C92700399B2A /* Exceptions for "Deskly" folder in "DesklyUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/DesklyUITests/DesklyUITests.swift,
+				Tests/DesklyUITests/DesklyUITestsLaunchTests.swift,
+			);
+			target = 29F00A0A2E0583CA00399B2A /* DesklyUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		29F009F62E0583C900399B2A /* Deskly */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				29F00A262E05C92300399B2A /* Exceptions for "Deskly" folder in "Deskly" target */,
+				29F00A272E05C92300399B2A /* Exceptions for "Deskly" folder in "DesklyTests" target */,
+				29F00A2D2E05C92700399B2A /* Exceptions for "Deskly" folder in "DesklyUITests" target */,
+			);
 			path = Deskly;
-			sourceTree = "<group>";
-		};
-		29F00A042E0583CA00399B2A /* DesklyTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DesklyTests;
-			sourceTree = "<group>";
-		};
-		29F00A0E2E0583CA00399B2A /* DesklyUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DesklyUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -76,8 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				29F009F62E0583C900399B2A /* Deskly */,
-				29F00A042E0583CA00399B2A /* DesklyTests */,
-				29F00A0E2E0583CA00399B2A /* DesklyUITests */,
 				29F009F52E0583C900399B2A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +150,6 @@
 			dependencies = (
 				29F00A032E0583CA00399B2A /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				29F00A042E0583CA00399B2A /* DesklyTests */,
-			);
 			name = DesklyTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +169,6 @@
 			);
 			dependencies = (
 				29F00A0D2E0583CA00399B2A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				29F00A0E2E0583CA00399B2A /* DesklyUITests */,
 			);
 			name = DesklyUITests;
 			packageProductDependencies = (
